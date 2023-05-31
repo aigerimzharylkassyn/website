@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat+Alternates">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+      .image {
+        position: relative;
+        width: 1180px;
+        height: 600px;
+        overflow: hidden;
+        top: 120px;
+        right: 0;
+        Float: right
+      }
+
+      @keyframes animateUser1 {
+        50% {
+          transform: translateX(20px) translateY(20px)
+        }
+      }
+
+      @keyframes animateUser2 {
+        50% {
+          transform: translateX(40px) translateY(40px)
+        }
+      }
+
+      @keyframes animateUser3 {
+        50% {
+          transform: translateX(-10px) translateY(40px)
+        }
+      }
+
+      .text {
+        position: absolute;
+        top: 23%;
+        left: 70px;
+        font-size: 55px
+      }
+
+      .text1 {
+        position: absolute;
+        top: 45%;
+        Left: 70px;
+        font-size: 20px
+      }
+
+      body {
+        margin: 0;
+        font-family: "Montserrat Alternates";
+        scroll-behavior: smooth
+      }
+
+      html {
+        scroll-behavior: smooth
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: fixed;
+        top: 20px;
+        width: 100%;
+        font-weight: 700;
+        z-index: 1
+      }
+
+      li {
+        float: left
+      }
+
+      li a {
+        display: inline-block;
+        color: #fff;
+        margin-left: 10px;
+        text-align: center;
+        padding: 8px 26px;
+        text-decoration: none;
+        background-color: linear-gradient(150deg, #8f68b0, #ff3e89);
+        border-radius: 30px;
+        transition: all .8s ease
+      }
+
+      li a:hover:not(.active) {
+        background: #e5deec;
+        color: linear-gradient(150deg, #8a77f3, #ff3e89)
+      }
+
+      li .active {
+        background: linear-gradient(150deg, #8a77f3, #ff3e89);
+        color: #fff
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a class="active" href="main.html">Python</a>
+      </li>
+      <li>
+        <a class="active" href="9.1.html">Индекстеу</a>
+      </li>
+      <li>
+        <a class="active" href="9.2.html">Тілімдер</a>
+      </li>
+      <li>
+        <a class="active" href="9.345.html">Жолдық әдістер</a>
+      </li>
+      <li>
+        <a class="active" href="9.6.html">Юникод символдар кестесі</a>
+      </li>
+    </ul>
+    <section id="main">
+      <div class="text">
+        <h1>Python тілі</h1>
+      </div>
+      <div class="image">
+        <img src="back.png" style="position:absolute;top:10px;right:0;width:100%;height:100%;object-fit:cover;z-index:-1">
+        <img src="image1.png" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;animation:animateUser1 3s linear infinite;z-index:1">
+        <img src="image2.png" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;animation:animateUser2 3s linear infinite;z-index:2">
+        <img src="image3.png" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;animation:animateUser3 3s linear infinite;z-index:3">
+      </div>
+      <p class="text1">Python - жоғары дәрежелі кодтың оқылуын <br>және әзірлеушінің өнімділігін арттыруға <br>мақсатталған жалпы мақсаттағы <br>бағдарламалау тілі. Python тілі аз синтаксисті <br>талап етеді. Бірақ сол уақытта стандартты <br>кітапханасы үлкен көлемді пайдалы <br>функцияларды қамтиды. </p>
+    </section>
+  </body>
+</html>

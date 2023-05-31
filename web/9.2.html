@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat+Alternates">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+      .h4 {
+        font-size: 30px;
+      }
+
+      .text {
+        position: absolute;
+        top: 5%;
+        left: 500px;
+        font-size: 30px;
+      }
+
+      .text1 {
+        position: absolute;
+        top: 22%;
+        Left: 90px;
+        font-size: 20px;
+      }
+
+      .text2 {
+        position: absolute;
+        top: 50%;
+        Left: 500px;
+        font-size: 25px;
+      }
+
+      .text3 {
+        position: absolute;
+        top: 60%;
+        Left: 90px;
+        font-size: 20px;
+      }
+
+      .text4 {
+        position: absolute;
+        top: 100%;
+        Left: 500px;
+        font-size: 20px;
+      }
+
+      .table1 {
+        position: absolute;
+        top: 80%;
+        Left: 500px;
+        font-size: 20px;
+        border-collapse: collapse;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      .table2 {
+        position: absolute;
+        top: 110%;
+        Left: 200px;
+        font-size: 20px;
+        border-collapse: collapse;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Montserrat Alternates";
+        scroll-behavior: smooth
+      }
+
+      html {
+        scroll-behavior: smooth
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: fixed;
+        top: 20px;
+        width: 100%;
+        font-weight: 700;
+        z-index: 1;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: inline-block;
+        color: #fff;
+        margin-left: 10px;
+        text-align: center;
+        padding: 8px 26px;
+        text-decoration: none;
+        background-color: linear-gradient(150deg, #8f68b0, #FF3E89);
+        border-radius: 30px;
+        transition: all .8s ease;
+      }
+
+      li a:hover:not(.active) {
+        background: #e5deec;
+        color: linear-gradient(150deg, #8A77F3, #FF3E89);
+      }
+
+      li .active {
+        background: linear-gradient(150deg, #8A77F3, #FF3E89);
+        color: #fff;
+      }
+
+      .container {
+        position: absolute;
+        top: 190%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .question {
+        margin-bottom: 10px;
+      }
+
+      .options label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .submit-btn {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a class="active" href="main.html">Python</a>
+      </li>
+      <li>
+        <a class="active" href="9.1.html">Индекстеу</a>
+      </li>
+      <li>
+        <a class="active" href="9.2.html">Тілімдер</a>
+      </li>
+      <li>
+        <a class="active" href="9.345.html">Жолдық әдістер</a>
+      </li>
+      <li>
+        <a class="active" href="9.6.html">Юникод символдар кестесі</a>
+      </li>
+    </ul>
+    <div class="text">
+      <h1>Жолдар</h1>
+    </div>
+    <p class="text1">
+      <b>Сабақтың тақырыбы: жолдар</b>
+      <br>
+      <br> 1. Жол кесінділері <br> 2. Жол таңбаларын өзгерту <br> 3. Мәселелерді шешу <br>
+      <br>
+      <b>Аннотация.</b> Тағы да деректердің жол түрі. Жол кесінділерін жасауды, сондай-ақ жолдағы таңбаларды <br>өзгертуді үйреніңіз.
+    </p>
+    <div class="text2">
+      <h2>Жол кесінділері</h2>
+    </div>
+    <p class="text3">Алдыңғы сабақта біз индекстер арқылы нақты жол таңбаларымен жұмыс істеуді үйрендік [ ]. Кейде сіз жолдың барлық бөліктерімен жұмыс істеуіңіз керек, бұл жағдайда біз кесінділерді (slices) қолданамыз. Бөлімдер индекстеу мен range() функциясының тіркесіміне ұқсас. <br>
+      <br> S = 'abcdefghij' жолын қарастырыңыз.
+    </p>
+    <Div class="table1">
+      <table style="border: 1px solid black;">
+        <tr style="border: 1px solid black;">
+          <th>Оң индекстер</th>
+          <td>0</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <th>Жол</th>
+          <td>a</td>
+          <td>b</td>
+          <td>c</td>
+          <td>d</td>
+          <td>e</td>
+          <td>f</td>
+          <td>g</td>
+          <td>h</td>
+          <td>I</td>
+          <td>j</td>
+        </tr>
+        <tr>
+          <th>Теріс индекстер</th>
+          <td>-10</td>
+          <td>-9</td>
+          <td>-8</td>
+          <td>-7</td>
+          <td>-6</td>
+          <td>-5</td>
+          <td>-4</td>
+          <td>-3</td>
+          <td>-2</td>
+          <td>-1</td>
+      </table>
+    </div>
+    <div class="text4">
+      <h2>s = 'abcdefghij'</h2>
+    </div>
+    <Div class="table2">
+      <table style="border: 1px solid black;">
+        <tr style="border: 1px solid black;">
+          <th>Бағдарлама коды</th>
+          <th>Нәтижесі</th>
+          <th>Түсіндіру</th>
+        </tr>
+        <tr>
+          <td>s[2:5]</td>
+          <td>cde</td>
+          <td>2, 3, 4 индекстері бар таңбалардан тұратын жол</td>
+        </tr>
+        <tr>
+          <td>s[:5]</td>
+          <td>abcde</td>
+          <td>жолдың алғашқы бес таңбасы</td>
+        </tr>
+        <tr>
+          <td>s[5:]</td>
+          <td>fghij</td>
+          <td>5 тен аяғына дейінгі индекстері бар таңбалардан тұратын жол</td>
+        </tr>
+        <tr>
+          <td>s[-2:]</td>
+          <td>ij</td>
+          <td>жолдың соңғы екі таңбасы</td>
+        </tr>
+        <tr>
+          <td>s[:]</td>
+          <td>abcdefghij</td>
+          <td>бүкіл жол</td>
+        </tr>
+        <tr>
+          <td>s[1:7:2]</td>
+          <td>bdf</td>
+          <td>1 ден 6 ға дейінгі индекстері бар әрбір екінші таңбадан тұратын жол</td>
+        </tr>
+      </table>
+    </div>
+    <div class="container">
+      <div class="h4">
+        <h4>Таңдау тесті</h4>
+      </div>
+      <form id="quizForm">
+        <div class="question">
+          <h3>1. Төмендегі код үзіндісі нені көрсетеді?</h3>
+          <p>s = 'abcdefg' <br> print(s[2:5]) </p>
+          <div class="options">
+            <label>
+              <input type="radio" name="q1" value="a"> ced </label>
+            <label>
+              <input type="radio" name="q1" value="b"> cde </label>
+            <label>
+              <input type="radio" name="q1" value="c"> fgh </label>
+          </div>
+        </div>
+        <div class="question">
+          <h3>2. Төмендегі код үзіндісі нені көрсетеді?</h3>
+          <p>s = 'abcdefg' <br> print(s[3:]) </p>
+          <div class="options">
+            <label>
+              <input type="radio" name="q2" value="a"> defg </label>
+            <label>
+              <input type="radio" name="q2" value="b"> dfeg </label>
+            <label>
+              <input type="radio" name="q2" value="c"> degf </label>
+          </div>
+        </div>
+        <div class="question">
+          <h3>3. Төмендегі код үзіндісі нені көрсетеді?</h3>
+          <p>s = 'abcdefg' <br> print(s[::-3]) </p>
+          <div class="options">
+            <label>
+              <input type="radio" name="q3" value="a"> gad </label>
+            <label>
+              <input type="radio" name="q3" value="b"> adg </label>
+            <label>
+              <input type="radio" name="q3" value="c"> gda </label>
+          </div>
+        </div>
+        <button class="submit-btn" type="submit">Тапсыру</button>
+      </form>
+      <div id="result"></div>
+    </div>
+    <script>
+      const quizForm = document.getElementById('quizForm');
+      quizForm.addEventListener('submit', calculatePoints);
+
+      function calculatePoints(event) {
+        event.preventDefault();
+        const answerKey = {
+          q1: 'b',
+          q2: 'a',
+          q3: 'c'
+        };
+        const userAnswers = {
+          q1: document.querySelector('input[name="q1"]:checked').value,
+          q2: document.querySelector('input[name="q2"]:checked').value,
+          q3: document.querySelector('input[name="q3"]:checked').value
+        };
+        let points = 0;
+        for (const question in answerKey) {
+          if (userAnswers[question] === answerKey[question]) {
+            points++;
+          }
+        }
+        const resultElement = document.getElementById('result');
+        resultElement.textContent = `Алынған ұпайлар: ${points}`;
+      }
+    </script>
+  </body>
+</html>

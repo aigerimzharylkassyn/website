@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat+Alternates">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+      .h4 {
+        font-size: 30px;
+      }
+
+      .text {
+        position: absolute;
+        top: 5%;
+        left: 500px;
+        font-size: 30px;
+      }
+
+      .text1 {
+        position: absolute;
+        top: 22%;
+        Left: 90px;
+        font-size: 20px;
+      }
+
+      .text2 {
+        position: absolute;
+        top: 40%;
+        Left: 500px;
+        font-size: 25px;
+      }
+
+      .text3 {
+        position: absolute;
+        top: 50%;
+        Left: 90px;
+        font-size: 20px;
+      }
+
+      .table1 {
+        position: absolute;
+        top: 130%;
+        Left: 500px;
+        font-size: 20px;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Montserrat Alternates";
+        scroll-behavior: smooth
+      }
+
+      html {
+        scroll-behavior: smooth
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: fixed;
+        top: 20px;
+        width: 100%;
+        font-weight: 700;
+        z-index: 1;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: inline-block;
+        color: #fff;
+        margin-left: 10px;
+        text-align: center;
+        padding: 8px 26px;
+        text-decoration: none;
+        background-color: linear-gradient(150deg, #8f68b0, #FF3E89);
+        border-radius: 30px;
+        transition: all .8s ease;
+      }
+
+      li a:hover:not(.active) {
+        background: #e5deec;
+        color: linear-gradient(150deg, #8A77F3, #FF3E89);
+      }
+
+      li .active {
+        background: linear-gradient(150deg, #8A77F3, #FF3E89);
+        color: #fff;
+      }
+
+      .container {
+        position: absolute;
+        top: 240%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .question {
+        margin-bottom: 10px;
+      }
+
+      .options label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .submit-btn {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a class="active" href="main.html">Python</a>
+      </li>
+      <li>
+        <a class="active" href="9.1.html">Индекстеу</a>
+      </li>
+      <li>
+        <a class="active" href="9.2.html">Тілімдер</a>
+      </li>
+      <li>
+        <a class="active" href="9.345.html">Жолдық әдістер</a>
+      </li>
+      <li>
+        <a class="active" href="9.6.html">Юникод символдар кестесі</a>
+      </li>
+    </ul>
+    <div class="text">
+      <h1>Жолдық әдістер</h1>
+    </div>
+    <p class="text1">
+      <b>Сабақтың тақырыбы: Жолдық әдістер</b>
+      <br>
+      <br> 1. Жол әдістері <br> 2. Мәселелерді шешу <br>
+      <br>
+      <b>Аннотация.</b>Деректердің жол түрі, регистрді түрлендірудің негізгі әдістері.
+    </p>
+    <div class="text2">
+      <h2>Әдістері мен функциялары</h2>
+    </div>
+    <p class="text3">Біз қазірдің өзінде кейбір кіріктірілген мүмкіндіктермен таныспыз: <b>min(), max(), len(), int(), float()</b> және т.б. әдіс — бұл объектімен тығыз байланысты мамандандырылған функция. Функция сияқты, әдіс жеке тапсырманы орындау үшін шақырылады, бірақ ол белгілі бір объект үшін шақырылады және жұмыс уақытында оның мақсатты объектісі туралы "біледі". <br>
+      <br> Осылайша: әдіс-бұл объектіге қолданылатын функция. Бұл жағдайда жолға. Әдіс нысанның аты ретінде шақырылады. әдіс_атауы (параметрлер). <br>
+      <br> Мысалы, s. find ('e') — бір'e' параметрі бар find әдісінің s жолына қолдану. <br>
+      <br> Деректер жолының әдістерін үш топқа бөлуге болады: <br>
+      <br> 1. Регистрді түрлендіру; <br> 2. Іздеу және ауыстыру; <br> 3. Таңбалардың жіктелуі. <br>
+      <br>
+      <b>Capitalize ()</b> әдісі s жолының көшірмесін қайтарады, онда бірінші таңбада бас әріп бар, ал қалған барлық таңбаларда кіші әріп бар. <br>
+      <br>
+      <b>Swapcase ()</b> әдісі s жолының көшірмесін қайтарады, онда бас әріппен жазылған барлық таңбалар кіші әріпке айналады және керісінше. <br>
+      <br>
+      <b>Title ()</b> әдісі s жолының көшірмесін қайтарады, онда әр сөздің бірінші таңбасы бас әріпке аударылады. <br>
+      <br>
+      <b>Lower ()</b> әдісі s жолының көшірмесін қайтарады, онда барлық таңбалар кіші әріппен жазылады. <br>
+      <br>
+      <b>Upper ()</b> әдісі s жолының көшірмесін қайтарады, онда барлық таңбалар бас әріппен жазылады. <br>
+      <br>
+      <b>Count әдісі</b>(< sub>, < start>, < end>) бастапқы s жолына < sub> ішкі жолының қиылыспайтын көріністерінің санын есептейді. <br>
+              <br>
+              <b>Startswith әдісі</b>(< suffix>, < start>, < end>) бастапқы s жолының <suffix> ішкі жолымен басталатынын анықтайды. Егер бастапқы жол <suffix>ішкі жолынан басталса, әдіс шын мәнін қайтарады,ал егер жоқ болса, онда жалған. <br>
+                        <br>
+                        <b>Endswith әдісі</b>(< suffix>, < start>, < end>) бастапқы s жолының < suffix> ішкі жолымен аяқталатынын анықтайды. Әдіс True мәнін қайтарады егер бастапқы жол <suffix> және False ішкі жолымен аяқталса. <br>
+                                  <br>
+                                  <b>Find әдісі</b> (< suffix>, < start>, < end>) бастапқы s жолында < sub> ішкі жолының бірінші пайда болу индексін табады. Біз бұл әдісті in операторымен бірге тексере аламыз: берілген жолда кейбір ішкі жол бар ма, жоқ па. <br>
+                                          <br>
+                                          <b>Index әдісі</b>(< sub>, < start>, < end>) find әдісімен бірдей (< sub>, < start>, < end>), егер ол valueerror: substring not found қатесін тудырмаса, егер ішкі жол табылмаса. <br>
+                                                      <br>
+                                                      <b>Strip () әдісі</b> жолдың көшірмесін қайтарады s онда жолдың басында және соңында тұрған барлық Бос орындар жойылады. <br>
+                                                      <br>
+                                                      <b>Lstrip () әдісі</b> жолдың көшірмесін қайтарады s жолдың басында тұрған барлық Бос орындар жойылған. <br>
+                                                      <br>
+                                                      <b>Rstrip ()</b> әдісі жолдың көшірмесін қайтарады s онда жолдың соңында тұрған барлық Бос орындар жойылады. <br>
+                                                      <br>
+                                                      <b>Replace әдісі</b>(< old>, < new>) s көшірмесін < old> ішкі жолының барлық пайда болуымен < new> ауыстырады.
+    </p>
+    <div class="container">
+      <div class="h4">
+        <h4>Таңдау тесті</h4>
+      </div>
+      <form id="quizForm">
+        <div class="question">
+          <h3>1. Төмендегі код үзіндісі нені көрсетеді?</h3>
+          <p>s = 'abcdababa' <br> print(s.replace('ab', '123')) </p>
+          <div class="options">
+            <label>
+              <input type="radio" name="q1" value="a"> 123123123123 </label>
+            <label>
+              <input type="radio" name="q1" value="b"> 123cd123123a </label>
+            <label>
+              <input type="radio" name="q1" value="c"> 123cdcd123cd </label>
+          </div>
+        </div>
+        <div class="question">
+          <h3>2. Төмендегі код үзіндісі нені көрсетеді?</h3>
+          <p>s = ' abbc ' <br> print(s.isspace()) </p>
+          <div class="options">
+            <label>
+              <input type="radio" name="q2" value="a"> False </label>
+            <label>
+              <input type="radio" name="q2" value="b"> True </label>
+            <label>
+              <input type="radio" name="q2" value="c"> Error </label>
+          </div>
+        </div>
+        <div class="question">
+          <h3>3. Төмендегі код үзіндісі нені көрсетеді?</h3>
+          <p>s = 'i LEARN Python LAnguaGE' <br> print(s.swapcase()) </p>
+          <div class="options">
+            <label>
+              <input type="radio" name="q3" value="a"> I LEARN PYTHON LANGUAGE </label>
+            <label>
+              <input type="radio" name="q3" value="b"> I learn python language </label>
+            <label>
+              <input type="radio" name="q3" value="c"> I learn pYTHON laNGUAge </label>
+          </div>
+        </div>
+        <button class="submit-btn" type="submit">Тапсыру</button>
+      </form>
+      <div id="result"></div>
+    </div>
+    <script>
+      const quizForm = document.getElementById('quizForm');
+      quizForm.addEventListener('submit', calculatePoints);
+
+      function calculatePoints(event) {
+        event.preventDefault();
+        const answerKey = {
+          q1: 'b',
+          q2: 'a',
+          q3: 'c'
+        };
+        const userAnswers = {
+          q1: document.querySelector('input[name="q1"]:checked').value,
+          q2: document.querySelector('input[name="q2"]:checked').value,
+          q3: document.querySelector('input[name="q3"]:checked').value
+        };
+        let points = 0;
+        for (const question in answerKey) {
+          if (userAnswers[question] === answerKey[question]) {
+            points++;
+          }
+        }
+        const resultElement = document.getElementById('result');
+        resultElement.textContent = `Алынған ұпайлар: ${points}`;
+      }
+    </script>
+  </body>
+</html>
